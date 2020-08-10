@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>t21</title>   
+   <script src="jquery.js"></script>
+</head>
+<body>
+
+
+
+<style>
+*{margin:0;}
+
+.d1{overflow: hidden; width:100px;word-break:break-all;}
+.p1{}
+
+
+</style>
+
+<div></div>
+
+<script>
+
+// var n = 10
+
+// for(var i=1;i<=n;i++){
+// 	for(let j=0;j<n-i;j++){
+// 		document.write("&nbsp;&nbsp;");
+// 	}
+// 	for(let j=0;j<i;j++){
+// 		document.write("&nbsp;*&nbsp;");
+// 	}
+// 	document.write("<br>");
+// }
+
+// document.write("<table style='border-collapse:collapse'>")
+// for(let i=1; i<10; i++){
+// 	document.write("<tr>")
+// 	for(let j=1; j<=i; j++){
+// 		document.write("<td style='border:solid 1px; padding:3px; text-align:center'>")
+// 		document.write(j +"*"+i+"="+i*j)
+// 		document.write("</td>")
+// 	}
+// 	document.write("</tr>")
+// }
+// document.write("</table>")
+
+class Ab{
+	constructor(){
+		console.log(this)
+		this.ab = 1;
+		this.bb = ()=>{console.log(this)}
+	}
+	a = 1;
+	b = ()=>{}
+	static f2(){ this.aaa = 3 }  
+	static c = 2  
+}
+Ab.prototype.aaaaa = ()=>{ console.log(1)}
+
+const ab = new Ab()
+ab.aaaaa = ()=>{ console.log(2)}
+
+
+console.log(Ab.f2())
+console.log(ab)
+
+
+
+
+</script>
+
+</body>
+</html>
